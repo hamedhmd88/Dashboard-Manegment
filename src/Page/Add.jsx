@@ -30,7 +30,7 @@ export default function Add({imform, setImform, setIsAdding}) {
     }
 
     const id = imform.length + 1;
-    const newEmployee = {
+    const user = {
         id,
         firstName,
         lastName,
@@ -38,7 +38,7 @@ export default function Add({imform, setImform, setIsAdding}) {
         age,
         date
     }
-    imform.push(newEmployee);
+    imform.push(user);
     setImform(imform);
     setIsAdding(false);
 
@@ -47,7 +47,7 @@ export default function Add({imform, setImform, setIsAdding}) {
       title: 'Added!',
       text: `${firstName} ${lastName}'s data has been Added.`,
       showConfirmButton: false,
-      timer: 1500
+      timer: 2500
   });
 }
 

@@ -51,7 +51,7 @@ export default function Edit({imform, selectedImform, setImform, setIsEditing}) 
           title: 'Updated!',
           text: `${user.firstName} ${user.lastName}'s data has been updated.`,
           showConfirmButton: false,
-          timer: 1500
+          timer: 2500
       });
   };
   
@@ -90,7 +90,7 @@ export default function Edit({imform, selectedImform, setImform, setIsEditing}) 
                     value={email}
                     onChange={e => setEmail(e.target.value)}
                 />
-                <label htmlFor="salary">Age</label>
+                <label htmlFor="age">Age</label>
                 <input
                 style={{color:'white'}}
                     id="age"

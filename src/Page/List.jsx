@@ -1,15 +1,17 @@
 
 
+
 export default function List({imform, handleEdit, handleDelete}) {
 
 
 
   return (
     <div className='contain-table'>
+     
     <table className='striped-table'>
         <thead  style={{backgroundColor:'#9a9a9a', color: "white"}}>
             <tr>
-                <th>No.</th>
+                <th>ID</th>
                 <th>First Name</th>
                 <th>Last Name</th>
                 <th>Email</th>
